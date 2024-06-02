@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGPA Calculator</title>
+<link rel="stylesheet" type="text/css" href="cgpa.css">
+<script type="text/javascript" src="cgpa.js"></script>
+</head>
+<body> 
+
+<div id="calculator">
+	<h1><center>CGPA CALCULATION</center></h1>
+    <label for="semno">Semester no:</label>
+    <input type="number" id="semno" min="0" max="8">
+
+    <label for="pcgpa">Previous Semester CGPA:</label>
+    <input type="number" id="pcgpa" min="0" max="4" step="0.01">
+
+    <label for="gpa">Current Semester GPA:</label>
+    <input type="number" id="gpa" min="0" max="4" step="0.01">
+
+    <input type="button" value="Calculate CGPA" id="calculateButton" onclick="return calculateCGPA()">
+
+    <div id="result">
+    </div>
+</div>
+
+</body>
+</html>
